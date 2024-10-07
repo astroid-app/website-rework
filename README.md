@@ -1,6 +1,6 @@
 # Femrise Landing
 
-This is just a landing page for the Femrise network, where users can choose between the Mastodon instance and the Pixelfed instance This doesn't have any dev branch, since it doesn't really need it -> Uploads are automated using GitHub's webhooks
+Meow meow
 
 ## Built With
 
