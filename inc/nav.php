@@ -5,13 +5,5 @@
             <li><a href="/">Home</a></li>
             <li><a href="/dashboard">Dashboard</a></li>
         </ul>
-        <a onclick="toggleDropdown()" class="nav-item current mobile-show"><span class="material-symbols-outlined">
-                menu_open
-            </span></a>
-
-        <div id="dropdown" class="dropdown-content">
-            <a href="/">Home</a>
-            <a href="/dashboard">Dashboard</a>
-        </div>
     </div>
 </nav>

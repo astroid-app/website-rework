@@ -17,11 +17,11 @@ transition: all 0.3s ease-in-out;
 
 @media screen and (max-width: 820px) {
 .visDesktop {
-display: none;
+display: block;
 }
 
 .nav ul {
-display: none;
+display: block;
 }
 }
 
@@ -63,11 +63,6 @@ background-color: #ddd;
 }
 }
 
-/* Hide the widget on screens 820px or smaller */
-@media screen and (max-width: 820px) {
-.statuspage-widget {
-display: none;
-}
 
 .dropdown-content {
 display: none;
@@ -76,7 +71,6 @@ display: none;
 .nav-item-mobile {
 display: block;
 /* Show the "NAV" link */
-}
 }
 
 .nav a {
