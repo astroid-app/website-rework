@@ -91,10 +91,10 @@
             </div>
         </div>
 
-        <h2 class="text-2xl font-semibold text-white">Here's a random cat for you :)</h2>
+        <h2 class="text-2xl font-semibold text-white mt-20">Here's a random cat for you :)</h2>
 
         <div class="flex justify-center">
-            <img id="random-cat" class="rounded-lg shadow-lg" alt="Random Cat">
+            <img id="random-cat" class="rounded-lg shadow-lg max-h-96" alt="Random Cat">
         </div>
 
     </div>
