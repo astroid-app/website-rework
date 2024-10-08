@@ -80,6 +80,24 @@
 
     <div class="container mx-auto px-6 py-10 text-white">
 
+        <div class="flex justify-center">
+            <img id="random-cat" class="rounded-lg shadow-lg" alt="Random Cat">
+        </div>
+
+        <script>
+            async function fetchRandomCat() {
+                try {
+                    const response = await fetch('https://api.thecatapi.com/v1/images/search');
+                    const data = await response.json();
+                    const catImage = data[0].url;
+                    document.getElementById('random-cat').src = catImage;
+                } catch (error) {
+                    console.error('Error fetching the cat image:', error);
+                }
+            }
+
+            fetchRandomCat();
+        </script>
 
         <div class="privacy-section space-y-8">
             <div class="privacy-section">
