@@ -201,7 +201,7 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           getStats();
-          observer.unobserve(section); // Stop observing after the function is called
+          observer.unobserve(section);
         }
       });
     }, {
@@ -210,11 +210,6 @@
 
     observer.observe(section);
   });
-
-  function getStats() {
-    // Your getStats function implementation
-    console.log('getStats function called');
-  }
 </script>
 <script>
   async function getStats() {

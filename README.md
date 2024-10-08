@@ -1,6 +1,12 @@
 # Astroid Website remake
 
-Meow meow
+This is an remake for the Astroid website made using TailwindCSS, it includes following pages that have been transferred:
+
+- Imprint
+- Privacy Policy
+- Terms of service
+- Some cat ASCII art because I wanted to
+- Some smol hints for the new dashboard design
 
 ## Built With
 

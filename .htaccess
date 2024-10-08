@@ -16,4 +16,4 @@ RewriteRule ^ %1 [R=301,L]
 
 # Fallback for any other requests that don't match a rule
 # Uncomment the following line if you want to handle 404 errors in a custom way
-# ErrorDocument 404 /404.php
+ErrorDocument 404 /404.php
