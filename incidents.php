@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>💖 Astroid | Status</title>
+    <title>💖 Astroid | Incidents</title>
 
     <link href="/src/styles/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <meta name="description" content="Astroid enables seamless integration of Discord, Guilded, Nerimity, and Revolt servers. Messaging across platforms, fostering streamlined communication on community growth. Expand your reach and engage with a broader audience, accelerating online community development.">
-    <meta name="author" content="💖 Astroid | Status">
+    <meta name="author" content="💖 Astroid | Incidents">
     <meta content="#A97EBD" data-react-helmet="true" name="theme-color">
     <meta property="og:image" content="favicon.png">
 </head>
@@ -42,9 +42,9 @@
         </div>
         <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
             <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
-                <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Astroid Network Status</h1>
+                <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Status Incidents</h1>
                 <div class="mt-10 flex items-center gap-x-5">
-                    <a href="/incidents" style="cursor: pointer;" class="flex-1 text-center rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-solid fa-arrow-left"></i> Go to Incidents</a>
+                    <a href="/status" style="cursor: pointer;" class="flex-1 text-center rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-solid fa-arrow-left"></i> Go to Status</a>
                     <a href="/" class="flex-1 text-center rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-solid fa-house"></i> Back Home</a>
                 </div>
             </div>
@@ -52,79 +52,55 @@
         </div>
     </div>
 
-    <div id="overall-status-message" class="text-center text-xl font-bold py-4"></div>
-
-    <div class="container mx-auto px-6 py-10">
-        <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-            <table class="w-full border-2 border-gray-700">
-                <thead>
-                    <tr>
-                        <th class="py-3 px-4 bg-gray-900 text-left text-xs font-semibold text-gray-300 uppercase tracking-wider">Name</th>
-                        <th class="py-3 px-4 bg-gray-900 text-left text-xs font-semibold text-gray-300 uppercase tracking-wider">Incident</th>
-                        <th class="py-3 px-4 bg-gray-900 text-left text-xs font-semibold text-gray-300 uppercase tracking-wider">Status</th>
-                    </tr>
-                </thead>
-                <tbody id="status-table-body">
-                    <!-- Status data will be inserted here -->
-                </tbody>
-            </table>
-        </div>
+    <div id="incidents-container" class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+        <!-- Incident cards will be appended here -->
     </div>
-
-
 
     <?php include 'inc/footer.php'; ?>
 </body>
-
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        fetch('https://status.astroid.cc/monitor')
-            .then(response => response.json())
-            .then(data => {
-                const tableBody = document.getElementById('status-table-body');
-                let allUp = true; // Flag to track if all statuses are 'up'
-                
-                for (const [key, value] of Object.entries(data)) {
-                    const row = document.createElement('tr');
-                    
-                    const nameCell = document.createElement('td');
-                    nameCell.className = 'py-3 px-4 border-b border-gray-700 text-gray-300';
-                    nameCell.textContent = key.charAt(0).toUpperCase() + key.slice(1);
-                    row.appendChild(nameCell);
-                    
-                    const incidentCell = document.createElement('td');
-                    incidentCell.className = 'py-3 px-4 border-b border-gray-700 text-gray-300';
-                    incidentCell.textContent = value.incident || 'No incidents';
-                    row.appendChild(incidentCell);
-                    
-                    const statusCell = document.createElement('td');
-                    statusCell.className = 'py-3 px-4 border-b border-gray-700';
-                    const statusSpan = document.createElement('span');
-                    statusSpan.className = 'inline-block py-1 px-2 rounded-full text-xs font-semibold';
-                    statusSpan.textContent = value.status.charAt(0).toUpperCase() + value.status.slice(1);
-                    
-                    if (value.status === 'up') {
-                        statusSpan.classList.add('text-green-200', 'bg-green-900');
-                    } else if (value.status === 'down') {
-                        statusSpan.classList.add('text-red-200', 'bg-red-900');
-                        allUp = false; // Update flag if any status is 'down'
-                    } else if (value.status === 'unknown') {
-                        statusSpan.classList.add('text-orange-200', 'bg-orange-900');
-                        allUp = false; // Update flag if any status is 'unknown'
-                    }
-                    
-                    statusCell.appendChild(statusSpan);
-                    row.appendChild(statusCell);
-                    
-                    tableBody.appendChild(row);
-                }
-                
-                if (allUp) {
-                    console.log('All systems are up!');
-                }
-            })
-            .catch(error => console.error('Error fetching status:', error));
-    });
+    async function fetchIncidents() {
+        const response = await fetch('https://status.astroid.cc/monitor/incidents');
+        const incidents = await response.json();
+        const container = document.getElementById('incidents-container');
+
+        //pls halp
+
+        incidents.forEach(incident => {
+            let borderColor = 'border-blue-400'; 
+            let bgColor = 'bg-gray-800'; 
+            let titleColor = 'text-blue-200';
+
+            if (incident.status === 'resolved') {
+                borderColor = 'border-green-400';
+                bgColor = 'bg-gray-800';
+                titleColor = 'text-green-200';
+            }  else if (incident.status !== 'investigating') {
+                borderColor = 'border-yellow-400';
+                bgColor = 'bg-gray-800';
+                titleColor = 'text-yellow-200';
+            } else if (incident.status !== 'unknown') {
+                borderColor = 'border-red-400';
+                bgColor = 'bg-gray-800';
+                titleColor = 'text-red-200';
+            }
+
+            const card = document.createElement('div');
+            card.className = `p-6 mb-8 rounded-lg shadow-lg ${bgColor} border ${borderColor} border-3 space-y-4`; 
+            card.style.width = '95%'; 
+            card.style.margin = '10px';
+            card.innerHTML = `
+                <h2 class="text-xl font-bold ${titleColor}">${incident.title}</h2>
+                <p class="text-white">${incident.description}</p>
+                <p class="text-white">Status: ${incident.status}</p>
+                <p class="text-white">Started At: ${incident.startedAt}</p>
+                ${incident.endedAt ? `<p class="text-white">Ended At: ${incident.endedAt}</p>` : ''}
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    fetchIncidents();
 </script>
 <script>
     const nav = document.querySelector('.nav');

@@ -96,3 +96,14 @@ padding: 10px 0;
 color: #5f8df1;
 font-weight: bold;
 }
+
+
+::-moz-selection { /* Code for Firefox */
+    color: #88b8f5;
+    background: #1e40af;
+  }
+  
+  ::selection {
+    color: #88b8f5;
+    background: #1e40af;
+  }
