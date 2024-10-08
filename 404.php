@@ -80,33 +80,16 @@
 
     <div class="container mx-auto px-6 py-10 text-white">
 
-        <div class="flex justify-center">
-            <img id="random-cat" class="rounded-lg shadow-lg" alt="Random Cat">
-        </div>
-
-        <script>
-            async function fetchRandomCat() {
-                try {
-                    const response = await fetch('https://api.thecatapi.com/v1/images/search');
-                    const data = await response.json();
-                    const catImage = data[0].url;
-                    document.getElementById('random-cat').src = catImage;
-                } catch (error) {
-                    console.error('Error fetching the cat image:', error);
-                }
-            }
-
-            fetchRandomCat();
-        </script>
-
-        <div class="privacy-section space-y-8">
-            <div class="privacy-section">
-                <h2 class="text-2xl font-semibold text-white">What can I do?</h2>
-
-                <ul class="mt-4 list-disc list-inside text-gray-300 space-y-2">
-                    <li>Make sure you've typed the correct URL</li>
-                    <li>Ask for support in our Discord server</li>
-                </ul>
+        <div class="flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 lg:space-x-8">
+            <div class="privacy-section lg:w-1/2">
+            <h2 class="text-2xl font-semibold text-white">What can I do?</h2>
+            <ul class="mt-4 list-disc list-inside text-gray-300 space-y-2">
+                <li>Make sure you've typed the correct URL</li>
+                <li>Ask for support in our Discord server</li>
+            </ul>
+            </div>
+            <div class="flex justify-center lg:w-1/2">
+            <img id="random-cat" class="rounded-lg shadow-lg max-w-full h-auto" alt="Random Cat">
             </div>
         </div>
 
@@ -116,6 +99,20 @@
 
     <?php include 'inc/footer.php'; ?>
 </body>
+<script>
+    async function fetchRandomCat() {
+        try {
+            const response = await fetch('https://api.thecatapi.com/v1/images/search');
+            const data = await response.json();
+            const catImage = data[0].url;
+            document.getElementById('random-cat').src = catImage;
+        } catch (error) {
+            console.error('Error fetching the cat image:', error);
+        }
+    }
+
+    fetchRandomCat();
+</script>
 <script>
     const nav = document.querySelector('.nav');
     window.addEventListener('scroll', fixNav);
