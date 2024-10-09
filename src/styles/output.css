@@ -775,6 +775,22 @@ video {
   animation: fade var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, 1) var(--tw-animate-fill, both);
 }
 
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-down {
+  animation: fade-down var(--tw-animate-duration, 1s) var(--tw-animate-easing, ease) var(--tw-animate-delay, 0s) var(--tw-animate-iteration, 1) var(--tw-animate-fill, both);
+}
+
 @keyframes fade-left {
   0% {
     opacity: 0;
@@ -1279,6 +1295,11 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.animate-delay-500 {
+  --tw-animate-delay: 500ms;
+  animation-delay: var(--tw-animate-delay);
 }
 
 .animate-duration-\[3000ms\] {
