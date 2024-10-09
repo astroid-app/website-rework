@@ -18,6 +18,8 @@
     <meta name="author" content="💖 Astroid | Status">
     <meta content="#A97EBD" data-react-helmet="true" name="theme-color">
     <meta property="og:image" content="favicon.png">
+
+    <?php include 'inc/head.php'; ?>
 </head>
 
 <body class="bg-gray-900">
@@ -75,7 +77,7 @@
 
     <?php include 'inc/footer.php'; ?>
 </body>
-
+<?php include 'inc/scripts.php'; ?>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         fetch('https://status.astroid.cc/monitor')

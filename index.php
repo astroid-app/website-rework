@@ -18,6 +18,8 @@
   <meta name="author" content="💖 Astroid">
   <meta content="#A97EBD" data-react-helmet="true" name="theme-color">
   <meta property="og:image" content="favicon.png">
+
+  <?php include 'inc/head.php'; ?>
 </head>
 
 <!--
@@ -51,7 +53,7 @@
 
 -->
 
-<body class="bg-gray-900">
+<body class="bg-gray-900" data-scroll-container>
 
 <?php include 'inc/nav.php'; ?>
 
@@ -67,11 +69,11 @@
       </svg>
       <rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
     </svg>
-    <div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" aria-hidden="true">
+    <div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)] animate-fade animate-duration-[3000ms]" aria-hidden="true">
       <div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#00AEFFFF] to-[ #0051FFFF] opacity-20" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
     </div>
     <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
-      <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
+      <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 animate-fade">
         <div class="mt-24 sm:mt-32 lg:mt-16">
           <a class="inline-flex space-x-6">
             <span class="rounded-full bg-blue-500/10 px-3 py-1 text-sm font-semibold leading-6 text-blue-300 ring-1 ring-inset ring-indigo-500/20">✨ Nerimity now as new platform ✨</span>
@@ -88,7 +90,7 @@
           <a href="https://ko-fi.com/astroidapp" class="flex-1 text-center rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-solid fa-circle-dollar-to-slot"></i> Support Us</a>
         </div>
       </div>
-      <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+      <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32 animate-fade-left">
         <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
           <img src="/placeholder.png" alt="App screenshot" width="2432" height="1442" class="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10">
         </div>
@@ -100,19 +102,19 @@
   <hr class="border-t-2 border-gray-700 w-full bg-gray-900">
 -->
 
-  <section id="stats-section" class="bg-gray-900 py-16">
+  <section id="stats-section" class="bg-gray-900 py-16" >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold text-white">Current statistics</h2>
       <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+        <div class="p-6 bg-gray-800 rounded-lg shadow-lg animate-fade animate-fill-forwards">
           <h3 class=" text-lg font-medium text-white" id="total-messages-num">-</h3>
           <p class="mt-2 text-base text-gray-300"><i class="fa-solid fa-message"></i> Total messages</p>
         </div>
-        <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+        <div class="p-6 bg-gray-800 rounded-lg shadow-lg animate-fade animate-fill-forwards">
           <h3 class=" text-lg font-medium text-white" id="messages-month-num">-</h3>
           <p class="mt-2 text-base text-gray-300"><i class="fa-solid fa-message"></i> Total messages this month</p>
         </div>
-        <div class="p-6 bg-gray-800 rounded-lg shadow-lg">
+        <div class="p-6 bg-gray-800 rounded-lg shadow-lg animate-fade animate-fill-forwards">
           <h3 class=" text-lg font-medium text-white" id="total-servers-num">-</h3>
           <p class="mt-2 text-base text-gray-300"><i class="fa-solid fa-server"></i> Total servers</p>
         </div>
@@ -193,6 +195,7 @@
 
   <?php include 'inc/footer.php'; ?>
 </body>
+<?php include 'inc/scripts.php'; ?>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const section = document.getElementById('stats-section');
