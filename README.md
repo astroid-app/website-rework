@@ -24,6 +24,7 @@ We use [GIT](https://git-scm.com/) for versioning and code review.
 ## Authors & Contributors
 
   - **French Femboi** - *Working on the code* - [Porfolio](https://french-femboi.eu)
+  - **Deutscher 775** - *Working on the code* - [Porfolio](https://deutscher775.de)
   - **Billie Thompson** - *Provided README Template* - [PurpleBooth](https://github.com/PurpleBooth)
 
 ## License
