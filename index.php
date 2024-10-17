@@ -82,7 +82,7 @@
         <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl animate-fade animate-delay-250">A Bridge Between All Platforms</h1>
         <p class="mt-6 text-lg leading-8 text-gray-300 animate-fade animate-delay-500">Astroid enables seamless integration of Discord, Guilded, Nerimity, and Revolt servers. Messaging across platforms, fostering streamlined communication on community growth. Expand your reach and engage with a broader audience, accelerating online community development.</p>
         <div class="mt-10 flex items-center gap-x-5">
-          <a href="https://astroid.cc/invite" class=" flex-1 text-center rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-solid fa-link"></i> Get Astroid</a>
+          <a href="/invite" class=" flex-1 text-center rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-solid fa-link"></i> Get Astroid</a>
           <a href="https://github.com/astroid-app" class=" flex-1 text-center rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-brands fa-github"></i> View on GitHub</a>
         </div>
         <div class="mt-5 flex items-center gap-x-5">
