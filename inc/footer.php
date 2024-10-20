@@ -3,7 +3,7 @@
             <div class="grid grid-cols-1 justify-center mb-8 lg:grid-cols-2 place-items-center">
                 <img src="/src/assets/img/Astroid-banner.png" alt="Footer Image" class="h-14 w-auto">
                 <a href="https://datalix.eu" target="_blank">
-                <p class="text-xs text-gray-400 mt-2 mb-2">Visit our partner</p>
+                <p class="text-xs text-gray-400 mt-2 mb-2">Hosted with support from</p>
                     <img src="https://cdn.datalix.de/images/header.png" alt="Footer Image" class="h-14 w-auto">
                 </a>
             </div>

@@ -16,7 +16,7 @@
 
     <meta name="description" content="Astroid enables seamless integration of Discord, Guilded, Nerimity, and Revolt servers. Messaging across platforms, fostering streamlined communication on community growth. Expand your reach and engage with a broader audience, accelerating online community development.">
     <meta name="author" content="💖 Astroid | Invite">
-    <meta content="#A97EBD" data-react-helmet="true" name="theme-color">
+    <meta content="#3D66EEFF" data-react-helmet="true" name="theme-color">
     <meta property="og:image" content="favicon.png">
 
     <?php include 'inc/head.php'; ?>
@@ -69,17 +69,17 @@
             <div class="card bg-gray-800 p-6 rounded-lg shadow-md">
             <h2 class="text-2xl font-bold text-white">Revolt</h2>
             <p class="text-gray-300 mt-4">Apply for Beta to get access to the Astroid Revolt Bot.</p>
-            <a href="https://api.astroid.cc/discord" target="_blank" class="mt-4 inline-flex items-center gap-x-2 bg-blue-900 text-blue-300 px-4 py-2 rounded-md shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400">Invite the Astroid Guilded Bot <i class="fa-solid fa-external-link"></i></a>
+            <a href="https://api.astroid.cc/discord" target="_blank" class="mt-4 inline-flex items-center gap-x-2 bg-blue-900 text-blue-300 px-4 py-2 rounded-md shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400">Join Discord server <i class="fa-solid fa-external-link"></i></a>
             </div>
             <div class="card bg-gray-800 p-6 rounded-lg shadow-md">
             <h2 class="text-2xl font-bold text-white">Nerimity</h2>
             <p class="text-gray-300 mt-4">Apply for Beta to get access to the Astroid Revolt Bot.</p>
-            <a href="https://api.astroid.cc/discord" target="_blank" class="mt-4 inline-flex items-center gap-x-2 bg-blue-900 text-blue-300 px-4 py-2 rounded-md shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400">Invite the Astroid Guilded Bot <i class="fa-solid fa-external-link"></i></a>
+            <a href="https://api.astroid.cc/discord" target="_blank" class="mt-4 inline-flex items-center gap-x-2 bg-blue-900 text-blue-300 px-4 py-2 rounded-md shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400">Join Discord server <i class="fa-solid fa-external-link"></i></a>
             </div>
             <div class="card bg-gray-800 p-6 rounded-lg shadow-md">
             <h2 class="text-2xl font-bold text-white">Beta</h2>
             <p class="text-gray-300 mt-4">The closed beta is now open for everyone. Apply to get access to early access features and updates.</p>
-            <a href="https://api.astroid.cc/discord" target="_blank" class="mt-4 inline-flex items-center gap-x-2 bg-blue-900 text-blue-300 px-4 py-2 rounded-md shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400">Invite the Astroid Guilded Bot <i class="fa-solid fa-external-link"></i></a>
+            <a href="https://api.astroid.cc/discord" target="_blank" class="mt-4 inline-flex items-center gap-x-2 bg-blue-900 text-blue-300 px-4 py-2 rounded-md shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400">Join Discord server <i class="fa-solid fa-external-link"></i></a>
             </div>
         </div>
 
