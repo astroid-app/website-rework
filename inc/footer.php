@@ -13,6 +13,7 @@
                         <li><a href="/terms" class="text-blue-200 hover:text-blue-300">Terms</a></li>
                         <li><a href="/imprint" class="text-blue-200 hover:text-blue-300">Imprint</a></li>
                         <li><a href="/privacy" class="text-blue-200 hover:text-blue-300">Privacy</a></li>
+                        <li><a href="/partners" class="text-blue-200 hover:text-blue-300">Partners</a></li>
                     </ul>
                     <span class="text-lg text-gray-100 text-center block">©<a href="https://astroid.cc">Astroid</a> 2024 - Present, All rights reserved.</span>
             </div>

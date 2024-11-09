@@ -5,6 +5,7 @@
         </a>
         <ul class=".nav.active">
             <li><a href="/">Home</a></li>
+            <li><a href="/about-us">About</a></li>
             <li><a href="https://orbithub.astroid.cc">Dashboard</a></li>
         </ul>
     </div>
