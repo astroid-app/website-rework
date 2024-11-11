@@ -72,7 +72,7 @@
             </script>
           </div>
           <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">Jason</h3>
-          <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Frontend & Backend developer</p>
+          <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Founder | Frontend & Backend developer</p>
           <p class="mt-2 text-base text-gray-500 dark:text-gray-500">JS, Python</p>
           <a href="https://github.com/deutscher775" class="mt-4 text-base text-purple-500 hover:text-purple-400">View GitHub profile</a>
         </div>
@@ -89,7 +89,7 @@
             </script>
           </div>
           <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">Yuray</h3>
-          <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Web developer</p>
+          <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Founder | Web developer</p>
           <p class="mt-2 text-base text-gray-500 dark:text-gray-500">Java, JS, Python</p>
           <a href="https://github.com/Yuray-Dev" class="mt-4 text-base text-purple-500 hover:text-purple-400">View GitHub profile</a>
         </div>
