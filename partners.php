@@ -14,9 +14,9 @@
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <meta name="description" content="Astroid enables seamless integration of Discord, Guilded, Nerimity, and Revolt servers. Messaging across platforms, fostering streamlined communication on community growth. Expand your reach and engage with a broader audience, accelerating online community development.">
-    <meta name="author" content="💖 Astroid | Partners">
-    <meta content="#3D66EEFF" data-react-helmet="true" name="theme-color">
+    <meta name="description" content="We've partnered with some services. Check our our partners now!">
+    <meta name="author" content="&#x1F496; Astroid | Partners">
+    <meta name="theme-color" content="#3D66EEFF" data-react-helmet="true">
     <meta property="og:image" content="favicon.png">
 
     <?php include 'inc/head.php'; ?>
