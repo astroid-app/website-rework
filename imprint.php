@@ -15,10 +15,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <meta content="Imprint | 💖 Astroid" property="og:title" />
-  <meta content="Astroid is the Bridge between Discord, Revolt and Guilded. | Start today" property="og:description"/>
+  <meta content="The person responsible for Astroid. | Not for support reasons." property="og:description"/>
   <meta content="https://astroid.cc/imprint" property="og:url" />
-  <meta content="https://astroid.cc/assets/Astroid Logo.png" property="og:image" />
-  <meta content="#1D202B" data-react-helmet="true" name="theme-color" />
+  <meta content="https://astroid.cc/src/assets/img/Astroid-banner.png" property="og:image" />
+  <meta content="#3D60FF" data-react-helmet="true" name="theme-color" />
 
   <?php include 'inc/head.php'; ?>
 </head>

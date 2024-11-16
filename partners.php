@@ -14,11 +14,11 @@
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <meta content="website" property="og:type"/>
-    <meta name="description" content="We've partnered with some services. Check our our partners now!" data-react-helmet="true" property="og:description"/>
-    <meta name="author" content="&#x1F496; Astroid | Partners" data-react-helmet="true" property="og:title"/>
-    <meta name="theme-color" content="#3D66EEFF" data-react-helmet="true"/>
-    <meta content="favicon.png" property="og:image"/>
+    <meta content="Partners | 💖 Astroid" property="og:title" />
+    <meta content="We're partnered with some services. Find out more about our partners!" property="og:description"/>
+    <meta content="https://astroid.cc/partners" property="og:url" />
+    <meta content="https://astroid.cc/src/assets/img/Astroid-banner.png" property="og:image" />
+    <meta content="#3D60FF" data-react-helmet="true" name="theme-color" />
 
     <?php include 'inc/head.php'; ?>
 </head>
