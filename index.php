@@ -17,7 +17,7 @@
   <meta content="💖 Astroid" property="og:title" />
   <meta content="Astroid enables seamless integration of Discord, Guilded, Nerimity, and Revolt servers. Messaging across platforms, fostering streamlined communication on community growth. Expand your reach and engage with a broader audience, accelerating online community development. | Start today" property="og:description"/>
   <meta content="https://astroid.cc" property="og:url" />
-  <meta content="https://astroid.cc/src/assets/img/Astroid-banner.png" property="og:image" />
+  <meta content="https://astroid.cc/src/assets/img/astroid_logo.png" property="og:image" />
   <meta content="#3D60FF" data-react-helmet="true" name="theme-color" />
 
   <?php include 'inc/head.php'; ?>

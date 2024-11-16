@@ -17,7 +17,7 @@
   <meta content="Imprint | 💖 Astroid" property="og:title" />
   <meta content="The person responsible for Astroid. | Not for support reasons." property="og:description"/>
   <meta content="https://astroid.cc/imprint" property="og:url" />
-  <meta content="https://astroid.cc/src/assets/img/Astroid-banner.png" property="og:image" />
+  <meta content="https://astroid.cc/src/assets/img/astroid_logo.png" property="og:image" />
   <meta content="#3D60FF" data-react-helmet="true" name="theme-color" />
 
   <?php include 'inc/head.php'; ?>

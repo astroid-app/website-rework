@@ -17,7 +17,7 @@
     <meta content="Status | 💖 Astroid" property="og:title" />
     <meta content="Astroid is split into multiple services. You are experiencing problems? Check Astroid's status now!" property="og:description"/>
     <meta content="https://astroid.cc/status" property="og:url" />
-    <meta content="https://astroid.cc/src/assets/img/Astroid-banner.png" property="og:image" />
+    <meta content="https://astroid.cc/src/assets/img/astroid_logo.png" property="og:thumbnail" />
     <meta content="#3D60FF" data-react-helmet="true" name="theme-color" />
 
     <?php include 'inc/head.php'; ?>

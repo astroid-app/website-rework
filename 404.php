@@ -14,10 +14,11 @@
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <meta name="description" content="Astroid enables seamless integration of Discord, Guilded, Nerimity, and Revolt servers. Messaging across platforms, fostering streamlined communication on community growth. Expand your reach and engage with a broader audience, accelerating online community development.">
-    <meta name="author" content="💖 Astroid | 404">
-    <meta content="#3D66EEFF" data-react-helmet="true" name="theme-color">
-    <meta property="og:image" content="favicon.png">
+    <meta content="404 - not found | 💖 Astroid" property="og:title" />
+    <meta content="Ooops D: That wasn't supposed to happen. Maybe the URL is wrong? It probably is, is it? ;)" property="og:description"/>
+    <meta content="https://astroid.cc" property="og:url"/>
+    <meta content="https://astroid.cc/src/assets/img/astroid_logo.png" property="og:image" />
+    <meta content="#3D60FF" data-react-helmet="true" name="theme-color" />
 
     <?php include 'inc/head.php'; ?>
 </head>
