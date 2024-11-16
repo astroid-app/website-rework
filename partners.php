@@ -14,10 +14,10 @@
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <meta name="description" content="We've partnered with some services. Check our our partners now!" data-react-helmet="true" property="og:description">
-    <meta name="author" content="&#x1F496; Astroid | Partners" data-react-helmet="true" property="og:title">
-    <meta name="theme-color" content="#3D66EEFF" data-react-helmet="true">
-    <meta content="favicon.png" property="og:image">
+    <meta name="description" content="We've partnered with some services. Check our our partners now!" data-react-helmet="true" property="og:description"/>
+    <meta name="author" content="&#x1F496; Astroid | Partners" data-react-helmet="true" property="og:title"/>
+    <meta name="theme-color" content="#3D66EEFF" data-react-helmet="true"/>
+    <meta content="favicon.png" property="og:image"/>
 
     <?php include 'inc/head.php'; ?>
 </head>
