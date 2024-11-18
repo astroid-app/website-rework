@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="./dashboard.js"></script>
+    <title>💖 Astroid | Dashboard</title>
+    <link rel="shortcut icon" href="./assets/Astroid Logo no bg.png" type="image/x-icon" />
+    <meta content="💖 Astroid | Dashboard" property="og:title" />
+    <meta content="Astroid Dashboard for managing your endpoint. | Login" property="og:description" />
+    <meta content="https://astroid.cc/dashboard" property="og:url" />
+    <meta content="https://astroid.cc/assets/Astroid Logo.png" property="og:image" style="border-radius: 20px" />
+    <meta content="#1D202B" data-react-helmet="true" name="theme-color" />
+  </head>
+  <body>
+    <div class="login-popup" id="login-popup" style="display: none">
+      <img src="./assets/Astroid-banner.png" alt="" class="banner-center" />
+      <div class="login-center">
+        <div class="error-div" style="display: none">
+          <p class="error" id="error"></p>
+        </div>
+        <h1>Login</h1>
+        <p class="endpoint-id">Endpoint ID (matches your Discord Server ID)</p>
+        <input
+          class="endpoint-id-input"
+          type="text"
+          id="endpoint-id"
+          placeholder="1234567890.." />
+        <p class="token">Token</p>
+        <input
+          class="token-input"
+          type="password"
+          id="token"
+          placeholder="AkdjDaSdgGasU.." />
+        <button class="login" id="login">
+          <div class="btn-load" id="btn-load" style="display: none"></div>
+          <span id="span-login">Login</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="./assets/Astroid-banner.png" alt="" />
+        </div>
+        <nav>
+          <a href="./terms.html">Terms</a>
+          <a href="./privacy.html">Privacy</a>
+          <a href="./imprint.html">Imprint</a>
+        </nav>
+      </header>
+      <div class="header">
+        <button class="logout" id="logout">Logout</button>
+        <button class="add-channel" id="add-channel">Add Channel</button>
+      </div>
+      <div class="channels" , id="channels">
+        <div class="discord_channels" id="discord_channels"></div>
+        <hr />
+        <div class="guilded_channels" id="guilded_channels"></div>
+        <hr />
+        <div class="revolt_channels" id="revolt_channels"></div>
+        <hr />
+        <div class="nerimity_channels" id="nerimity_channels"></div>
+      </div>
+      <div class="log-channels" id="log-channels">
+        <h1>Logs</h1>
+        <p class="log-discord">Discord Channel</p>
+        <input id="log-discord" />
+        <p class="log-guilded">Guilded Channel</p>
+        <input id="log-guilded" />
+        <p class="log-revolt">Revolt Channel</p>
+        <input id="log-revolt" />
+        <p class="log-nerimity">Nerimity Channel</p>
+        <input id="log-nerimity" />
+        <button class="log-save" id="save">Save</button>
+      </div>
+
+      <div class="blacklist" id="blacklist-div">
+        <h1>Blacklist</h1>
+        <input id="blacklist-input" class="blacklist-input" />
+        <button class="blacklist-save" id="save">Add</button>
+        <h2>Blacklisted Words</h2>
+        <div class="blacklisted-words" id="blacklisted-words"></div>
+      </div>
+
+      <div class="allowed-ids-div" id="allowed-ids-div">
+        <h1>Allowed IDs</h1>
+        <input id="allowed-ids-input" class="allowed-ids-input" />
+        <button class="allowed-ids-save" id="save">Add</button>
+        <div class="allowed-ids" id="allowed-ids"></div>
+      </div>
+    </div>
+
+    <div class="filter" id="filter" style="display: none"></div>
+
+    <div class="edit-popup" id="edit-popup" style="display: none">
+      <h1 id="channel-name"></h1>
+      <p id="popup-channel-id" style="display: none"></p>
+      <p id="popup-platform" style="display: none"></p>
+      <p class="discord" id="_platform">Discord Channel</p>
+      <p class="discord_channel_id" id="input_desc">Discord Channel ID</p>
+      <input
+        class="discord_channel_id"
+        id="discord_channel_id"
+        placeholder="1234567890.." />
+      <p class="discord_webhook_url" id="input_desc">Discord Webhook URL</p>
+      <input
+        class="discord_webhook_url"
+        id="discord_webhook_url"
+        placeholder="https://.." />
+      <p class="guilded" id="_platform">Guilded Channel</p>
+      <p class="guilded_channel_id" id="input_desc">Guilded Channel ID</p>
+      <input
+        class="guilded_channel_id"
+        id="guilded_channel_id"
+        placeholder="abcd-efgh.." />
+      <p class="guilded_webhook_url" id="input_desc">Guilded Webhook URL</p>
+      <input
+        class="guilded_webhook_url"
+        id="guilded_webhook_url"
+        placeholder="https://.." />
+      <p class="revolt" id="_platform">Revolt Channel</p>
+      <p class="revolt_channel_id" id="input_desc">Revolt Channel ID</p>
+      <input
+        class="revolt_channel_id"
+        id="revolt_channel_id"
+        placeholder="01T6P8OY47M.." />
+      <!-- <input class="revolt_webhook_url" id="revolt_webhook_url"> -->
+      <p class="nerimity" id="_platform">Nerimity Channel</p>
+      <p class="nerimity_channel_id" id="input_desc">Nerimity Channel ID</p>
+      <input
+        class="nerimity_channel_id"
+        id="nerimity_channel_id"
+        placeholder="1234567890.." />
+      <!-- <input class="nerimity_webhook_url" id="nerimity_webhook_url"> -->
+      <button class="close" id="close">Close</button>
+      <button class="save" id="save">Save</button>
+      <button class="delete" id="delete">Delete</button>
+    </div>
+
+    <div class="add-channel-popup" id="add-channel-popup" style="display: none">
+      <h1>Add Channel</h1>
+      <p class="discord" id="_platform">Discord Channel</p>
+      <p class="discord_channel_id" id="input_desc">Discord Channel ID</p>
+      <input
+        class="discord_channel_id"
+        id="discord_channel_id"
+        placeholder="1234567890.." />
+      <p class="discord_webhook_url" id="input_desc">Discord Webhook URL</p>
+      <input
+        class="discord_webhook_url"
+        id="discord_webhook_url"
+        placeholder="https://.." />
+      <p class="guilded" id="_platform">Guilded Channel</p>
+      <p class="guilded_channel_id" id="input_desc">Guilded Channel ID</p>
+      <input
+        class="guilded_channel_id"
+        id="guilded_channel_id"
+        placeholder="abcd-efgh.." />
+      <p class="guilded_webhook_url" id="input_desc">Guilded Webhook URL</p>
+      <input
+        class="guilded_webhook_url"
+        id="guilded_webhook_url"
+        placeholder="https://.." />
+      <p class="revolt" id="_platform">Revolt Channel</p>
+      <p class="revolt_channel_id" id="input_desc">Revolt Channel ID</p>
+      <input
+        class="revolt_channel_id"
+        id="revolt_channel_id"
+        placeholder="01T6P8OY47M.." />
+      <!-- <input class="revolt_webhook_url" id="revolt_webhook_url"> -->
+      <p class="nerimity" id="_platform">Nerimity Channel</p>
+      <p class="nerimity_channel_id" id="input_desc">Nerimity Channel ID</p>
+      <input
+        class="nerimity_channel_id"
+        id="nerimity_channel_id"
+        placeholder="1234567890.." />
+      <!-- <input class="nerimity_webhook_url" id="nerimity_webhook_url"> -->
+      <button class="close" id="close">Close</button>
+      <button class="save" id="save">Save</button>
+    </div>
+
+    <div class="loading" id="loading">
+      <div class="loader">
+        <div>
+          <ul>
+            <li>
+              <svg fill="currentColor" viewBox="0 0 90 120">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+              </svg>
+            </li>
+            <li>
+              <svg fill="currentColor" viewBox="0 0 90 120">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+              </svg>
+            </li>
+            <li>
+              <svg fill="currentColor" viewBox="0 0 90 120">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+              </svg>
+            </li>
+            <li>
+              <svg fill="currentColor" viewBox="0 0 90 120">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+              </svg>
+            </li>
+            <li>
+              <svg fill="currentColor" viewBox="0 0 90 120">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+              </svg>
+            </li>
+            <li>
+              <svg fill="currentColor" viewBox="0 0 90 120">
+                <path
+                  d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <span
+          >Loading endpoint.. <br />
+          by
+          <a href="https://uiverse.io/Nawsome/curly-goose-54">Nawsome</a></span
+        >
+      </div>
+    </div>
+  </body>
+</html>
