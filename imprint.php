@@ -45,7 +45,7 @@
     <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40 animate-fade">
       <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
         <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Imprint</h1>
-        <p class="mt-6 text-lg leading-8 text-gray-300">This imprint is effective as of 11th September 2024</p>
+        <p class="mt-6 text-lg leading-8 text-gray-300">This imprint is effective as of 29th November 2024</p>
       </div>
     </div>
   </div>
