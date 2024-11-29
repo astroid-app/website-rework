@@ -58,18 +58,18 @@
     <p>According to § 5 TMG</p>
 
     <p>
-        Dustin Pfeiffer <br>
-        Karl-Jänecke Straße 6 <br>
-        39218 Schönebeck, Germany
+        Jason Herrmann <br>
+        Feldstraße 9 <br>
+        39435 Egeln-Nord, Germany
     </p>
 
     <h2 class="text-2xl font-semibold">Represented by</h2>
-    <p>Dustin Pfeiffer</p>
+    <p>Jason Herrmann</p>
 
     <h2 class="text-2xl font-semibold">Contact</h2>
     <p>
-        Telephone: <a href="tel:+4917646187809" class="text-blue-400 hover:underline">+49 176 46187809</a><br>
-        E-Mail: <a href="mailto:dustin.pfeiffer@dp-digitalmarketing.com" class="text-blue-400 hover:underline">dustin.pfeiffer@dp-digitalmarketing.com</a>
+        Telephone: <a href="tel:+4915901147061" class="text-blue-400 hover:underline">+49 159 01147061</a> (no support)<br>
+        E-Mail: <a href="mailto:mail@deutscher775.de" class="text-blue-400 hover:underline">mail@deutscher775.de</a> (no support)
     </p>
 </div>
 
