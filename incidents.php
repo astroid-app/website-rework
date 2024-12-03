@@ -69,6 +69,8 @@
         const container = document.getElementById('incidents-container');
 
         //pls halp
+        
+        incidents.reverse();
 
         incidents.forEach(incident => {
             let borderColor = 'border-blue-400'; 
