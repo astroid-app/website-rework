@@ -96,23 +96,6 @@
         </div>
         <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
         <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
-            <div id="avatar3" class="h-24 w-24 p-0 rounded-full"></div>
-            <script>
-              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=ameisenbeere')
-                .then(response => response.text())
-                .then(url => {
-                  document.getElementById('avatar3').style.backgroundImage = `url(${url})`;
-                  document.getElementById('avatar3').style.backgroundSize = 'cover';
-                });
-            </script>
-          </div>
-          <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">Ameisenbeere</h3>
-          <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Backend developer</p>
-          <p class="mt-2 text-base text-gray-500 dark:text-gray-500">Python</p>
-          <a href="https://github.com/ameisenbeerereal" class="mt-4 text-base text-purple-500 hover:text-purple-400">View GitHub profile</a>
-        </div>
-        <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
-        <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
             <div id="avatar4" class="h-24 w-24 p-0 rounded-full"></div>
             <script>
               fetch('https://api.astroid.cc/contribution/contributor/avatar?name=french_femboi')
@@ -141,21 +124,6 @@
             </script>
           </div>
           <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">L347</h3>
-          <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Design</p>
-        </div>
-        <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
-        <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
-            <div id="avatar6" class="h-24 w-24 p-0 rounded-full"></div>
-            <script>
-              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=moonseulran')
-                .then(response => response.text())
-                .then(url => {
-                  document.getElementById('avatar6').style.backgroundImage = `url(${url})`;
-                  document.getElementById('avatar6').style.backgroundSize = 'cover';
-                });
-            </script>
-          </div>
-          <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">Moonseulran</h3>
           <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Design</p>
         </div>
       </div>
