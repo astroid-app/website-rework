@@ -74,7 +74,7 @@
           </div>
           <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">Jason</h3>
           <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Founder | Frontend & Backend developer</p>
-          <p class="mt-2 text-base text-gray-500 dark:text-gray-500">JS, Python</p>
+          <p class="mt-2 text-base text-gray-500 dark:text-gray-500">JS, Python, Kotlin</p>
           <a href="https://github.com/deutscher775" class="mt-4 text-base text-purple-500 hover:text-purple-400">View GitHub profile</a>
         </div>
         <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
