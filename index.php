@@ -149,8 +149,8 @@
       </svg>
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-white dark:text-gray-900">Dashboard (coming soon)</h2>
-      <p class="text-1xl font-bold text-white dark:text-gray-900">Our upcoming dashboard will provide real-time analytics, user management, and seamless integration with all your favorite platforms. Stay tuned for more updates!</p>
+      <h2 class="text-3xl font-bold text-white dark:text-gray-900">Dashboard <s>(coming soon)</s></h2>
+      <p class="text-1xl font-bold text-white dark:text-gray-900">The new <a href="https://orbithub.astroid.cc/login">OrbitHub dashboard</a> is live! Configure, create, and modify all your Astroid bridge's from OrbitHub! (More features will be added)</p>
       <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
         <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
           <h3 class=" text-lg font-medium text-white dark:text-gray-900">#general</h3>
