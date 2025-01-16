@@ -1,7 +1,7 @@
 {
-  "name": "landing-page",
-  "version": "0.0.6",
-  "description": "Just a landing page for the femrise network",
+  "name": "astroid-web-v2",
+  "version": "2.0.0",
+  "description": "Frontend for the Astroid bot",
   "main": "index.js",
   "type": "module",
   "scripts": {
