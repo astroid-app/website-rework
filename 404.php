@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>💖 Astroid | 404</title>
+    <title>💖 Astroid | Error 404</title>
 
     <link href="/src/styles/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -14,7 +14,7 @@
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <meta content="404 - not found | 💖 Astroid" property="og:title" />
+    <meta content="404 - Not Found | 💖 Astroid" property="og:title" />
     <meta content="Ooops D: That wasn't supposed to happen. Maybe the URL is wrong? It probably is, is it? ;)" property="og:description"/>
     <meta content="https://astroid.cc" property="og:url"/>
     <meta content="https://astroid.cc/src/assets/img/astroid_logo.png" property="og:image" />
@@ -44,8 +44,8 @@
         </div>
         <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40 animate-fade">
             <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
-                <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">That's An Error 404</h1>
-                <p class="mt-6 text-lg leading-8 text-gray-300">The page you're looking for doesn't exist, or it was deleted.</p>
+                <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Error 404</h1>
+                <p class="mt-6 text-lg leading-8 text-gray-300">We tried our best to find what you're looking for, but we found nothing. The page you're looking for doesn't exist, or it may have been moved to a different location, or deleted.</p>
                 <div class="mt-10 flex items-center gap-x-5">
                     <a onclick="history.back()" style="cursor: pointer;" class="flex-1 text-center rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-solid fa-arrow-left"></i> Go Back</a>
                     <a href="/" class="flex-1 text-center rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-solid fa-house"></i> Back Home</a>
@@ -63,7 +63,7 @@
 
                 <ul class="mt-4 list-disc list-inside text-gray-300 space-y-2">
                     <li>Make sure you've typed the correct URL</li>
-                    <li>Ask for support in our Discord server</li>
+                    <li>Ask for support in our <a href="https://discord.gg/GtZXgtkWzE">Discord community server</a></li>
                 </ul>
             </div>
         </div>
