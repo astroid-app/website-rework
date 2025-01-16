@@ -94,6 +94,11 @@
                     const nameCell = document.createElement('td');
                     nameCell.className = 'py-3 px-4 border-b border-gray-700 text-gray-300';
                     nameCell.textContent = key.charAt(0).toUpperCase() + key.slice(1);
+                    // Hardcode normal revolt to show beta
+                    if (nameCell.textContent == "Revolt") {
+                        nameCell.textContent = `${nameCell.textContent} (Beta Only)`
+                    }
+                    
                     row.appendChild(nameCell);
                     
                     const incidentCell = document.createElement('td');
