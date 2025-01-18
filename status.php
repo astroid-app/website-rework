@@ -46,7 +46,7 @@
         <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40 animate-fade">
             <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
                 <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Astroid Network Status</h1>
-                <p class="mt-6 text-lg leading-8 text-gray-500">This status page does not include the status of any privatley hosted instances of Astroid.</p>
+                <p class="mt-6 text-lg leading-8 text-gray-500">This status page does not include the status of any privately hosted instances of Astroid.</p>
                 <div class="mt-10 flex items-center gap-x-5">
                     <a href="/incidents" style="cursor: pointer;" class="flex-1 text-center rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-solid fa-arrow-left"></i> Go to Incidents</a>
                     <a href="/" class="flex-1 text-center rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-solid fa-house"></i> Back Home</a>
