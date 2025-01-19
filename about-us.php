@@ -98,7 +98,7 @@
         <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
             <div id="avatar4" class="h-24 w-24 p-0 rounded-full"></div>
             <script>
-              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=french_femboi')
+              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=catpawzzz')
                 .then(response => response.text())
                 .then(url => {
                   document.getElementById('avatar4').style.backgroundImage = `url(${url})`;
