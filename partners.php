@@ -77,7 +77,7 @@
             <img src="src/assets/img/eonfluxtech.png" alt="Partner Image" class="w-24 h-24 rounded-full">
             <div>
                 <h2 class="text-2xl font-bold">EonfluxTech</h2>
-                <p class="mt-2 text-gray-300">EonfluxTech is a technology company focused on creating open-source software that is both powerful and accessible. Our mission is to build tools that empower developers and enhance the digital experience for everyone.</p>
+                <p class="mt-2 text-gray-300">EonfluxTech is a technology company focused on creating open-source software that is both powerful and accessible. Our mission is <br> to build tools that empower developers and enhance the digital experience for everyone.</p>
             </div>
             </div>
             <div class="ml-auto md:ml-0">
