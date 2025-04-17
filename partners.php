@@ -72,7 +72,7 @@
     </div>
 
     <div class="flex items-center space-x-6">
-        <div class="w-full bg-gray-800 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-6 mx-12">
+        <div class="w-full bg-gray-800 rounded-lg shadow-md mt-10 p-6 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-6 mx-12">
             <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
             <img src="src/assets/img/eonfluxtech.png" alt="Partner Image" class="w-24 h-24 rounded-full">
             <div>
