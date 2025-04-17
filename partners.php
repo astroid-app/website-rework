@@ -71,6 +71,21 @@
         </div>
     </div>
 
+    <div class="flex items-center space-x-6">
+        <div class="w-full bg-gray-800 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-6 mx-12">
+            <div class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
+            <img src="src/assets/img/eonfluxtech.png" alt="Partner Image" class="w-24 h-24 rounded-full">
+            <div>
+                <h2 class="text-2xl font-bold">EonfluxTech</h2>
+                <p class="mt-2 text-gray-300">EonfluxTech is a technology company focused on creating open-source software that is both powerful and accessible. Our mission is to build tools that empower developers and enhance the digital experience for everyone.</p>
+            </div>
+            </div>
+            <div class="ml-auto md:ml-0">
+            <a href="https://eonfluxtech.com" class="inline-block rounded-md bg-blue-900 px-4 py-2 text-sm font-semibold text-blue-300 shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"><i class="fa-solid fa-link"></i> Learn More</a>
+            </div>
+        </div>
+    </div>
+
     </div>
 
 
