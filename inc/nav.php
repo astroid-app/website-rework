@@ -1,7 +1,7 @@
 <nav class="nav">
     <div class="container">
         <a href="/">
-            <img class="logo" src="/src/assets/img/Astroid-banner.png" alt="LOGO" style="height: 35px;margin-left: 20px;">
+            <img class="logo" src="/src/assets/img/astroid_banner_crop.png" alt="LOGO" style="height: 35px;margin-left: 20px;">
         </a>
         <ul class=".nav.active">
             <li><a href="/">Home</a></li>
