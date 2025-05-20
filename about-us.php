@@ -64,7 +64,7 @@
           <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
             <div id="avatar1" class="h-24 w-24 p-0 rounded-full"></div>
             <script>
-              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=deutscher775')
+              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=jesn.zip')
                 .then(response => response.text())
                 .then(url => {
                   document.getElementById('avatar1').style.backgroundImage = `url(${url})`;
@@ -74,7 +74,7 @@
           </div>
           <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">Jason</h3>
           <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Founder | Frontend & Backend developer</p>
-          <p class="mt-2 text-base text-gray-500 dark:text-gray-500">JS, Python, Kotlin</p>
+          <p class="mt-2 text-base text-gray-500 dark:text-gray-500">Java- and TypeScript, Python, Kotlin</p>
           <a href="https://github.com/deutscher775" class="mt-4 text-base text-purple-500 hover:text-purple-400">View GitHub profile</a>
         </div>
         <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
