@@ -71,6 +71,13 @@
         Telephone: <a href="tel:+4915901147061" class="text-blue-400 hover:underline">+49 159 01147061</a> (no support)<br>
         E-Mail: <a href="mailto:mail@deutscher775.de" class="text-blue-400 hover:underline">mail@deutscher775.de</a> (no support)
     </p>
+    <h2>Scope</h2>
+    <p>This imprint is valid for the following domains:</p>
+    <ul>
+        <li>*.astroid.cc</li>
+        <li>*.jesn.zip</li>
+        <li>*.deutscher775.de</li>
+    </ul>
 </div>
 
   </div>
