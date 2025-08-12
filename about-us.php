@@ -60,6 +60,7 @@
       <h2 class="text-3xl font-bold text-white dark:text-gray-900">Meet Our Team</h2>
       <p class="text-1xl font-bold text-white dark:text-gray-900">Meet the cats behind our code</p>
       <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
+
         <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
           <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
             <div id="avatar1" class="h-24 w-24 p-0 rounded-full"></div>
@@ -77,6 +78,7 @@
           <p class="mt-2 text-base text-gray-500 dark:text-gray-500">Java- and TypeScript, Python, Kotlin</p>
           <a href="https://github.com/deutscher775" class="mt-4 text-base text-purple-500 hover:text-purple-400">View GitHub profile</a>
         </div>
+
         <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
           <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
             <div id="avatar2" class="h-24 w-24 p-0 rounded-full"></div>
@@ -94,6 +96,7 @@
           <p class="mt-2 text-base text-gray-500 dark:text-gray-500">Java, JS, Python</p>
           <a href="https://github.com/Yuray-Dev" class="mt-4 text-base text-purple-500 hover:text-purple-400">View GitHub profile</a>
         </div>
+
         <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
         <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
             <div id="avatar4" class="h-24 w-24 p-0 rounded-full"></div>
@@ -106,11 +109,28 @@
                 });
             </script>
           </div>
+          <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">kyo</h3>
+          <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Admin</p>
+        </div>
+
+        <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
+        <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
+            <div id="avatar4" class="h-24 w-24 p-0 rounded-full"></div>
+            <script>
+              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=7kyoq')
+                .then(response => response.text())
+                .then(url => {
+                  document.getElementById('avatar4').style.backgroundImage = `url(${url})`;
+                  document.getElementById('avatar4').style.backgroundSize = 'cover';
+                });
+            </script>
+          </div>
           <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">Catpawz</h3>
           <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Frontend & Backend developer</p>
           <p class="mt-2 text-base text-gray-500 dark:text-gray-500">JS, HTML, CSS, PHP, Java</p>
           <a href="https://github.com/french_femboi" class="mt-4 text-base text-purple-500 hover:text-purple-400">View GitHub profile</a>
         </div>
+
         <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
         <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
             <div id="avatar5" class="h-24 w-24 p-0 rounded-full"></div>
