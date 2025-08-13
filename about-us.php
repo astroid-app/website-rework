@@ -133,13 +133,13 @@
 
         <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
         <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
-            <div id="avatar5" class="h-24 w-24 p-0 rounded-full"></div>
+            <div id="avatar6" class="h-24 w-24 p-0 rounded-full"></div>
             <script>
               fetch('https://api.astroid.cc/contribution/contributor/avatar?name=l347_hd')
                 .then(response => response.text())
                 .then(url => {
-                  document.getElementById('avatar5').style.backgroundImage = `url(${url})`;
-                  document.getElementById('avatar5').style.backgroundSize = 'cover';
+                  document.getElementById('avatar6').style.backgroundImage = `url(${url})`;
+                  document.getElementById('avatar6').style.backgroundSize = 'cover';
                 });
             </script>
           </div>
