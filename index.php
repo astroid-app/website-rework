@@ -120,7 +120,7 @@
         </div>
         <div class="p-6 bg-gray-800 rounded-lg shadow-lg animate-fade animate-fill-forwards">
           <h3 class=" text-lg font-medium text-white" id="messages-month-num">-</h3>
-          <p class="mt-2 text-base text-gray-300"><i class="fa-solid fa-message"></i> Total messages this month</p>
+          <p id="messages-month" class="mt-2 text-base text-gray-300"><i class="fa-solid fa-message"></i> Total messages this month</p>
         </div>
         <div class="p-6 bg-gray-800 rounded-lg shadow-lg animate-fade animate-fill-forwards">
           <h3 class=" text-lg font-medium text-white" id="total-servers-num">-</h3>
@@ -226,6 +226,13 @@
   async function getStats() {
     const res = await fetch("https://api.astroid.cc/statistics");
     const data = await res.json();
+
+    let since_human_readable = new Date(data.messages.periodStart * 1000).toLocaleDateString("en-US", {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }); 
+    document.querySelector("#messages-month").innerHTML = `<i class="fa-solid fa-message"></i> Total messages this month (since ${since_human_readable})`;
 
     // animation from https://jshakespeare.com/simple-count-up-number-animation-javascript-react/
     const animationDuration = 1500;
