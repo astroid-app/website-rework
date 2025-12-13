@@ -45,7 +45,7 @@
     <div class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40 animate-fade">
       <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
         <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Imprint</h1>
-        <p class="mt-6 text-lg leading-8 text-gray-300">This imprint is effective as of 5th September 2025</p>
+        <p class="mt-6 text-lg leading-8 text-gray-300">This imprint is effective as of 13th Dezember 2025</p>
       </div>
     </div>
   </div>
@@ -58,18 +58,18 @@
     <p>According to § 5 TMG</p>
 
     <p>
-        Finn Holger Jahns <br>
-        Merkenstraße 38 <br>
-        37085 Göttingen, Germany
+        Frank Hörsing <br>
+        Luisenstraße 95a <br>
+        53721 Siegburg, Germany
     </p>
 
     <h2 class="text-2xl font-semibold">Represented by</h2>
-    <p>Finn Holger Jahns</p>
+    <p>Frank Hörsing</p>
 
     <h2 class="text-2xl font-semibold">Contact</h2>
     <p>
-        Telephone: <a href="tel:+4915901147061" class="text-blue-400 hover:underline">+49 151 67951441</a> (no support)<br>
-        E-Mail: <a href="mailto:trinkhalme_rhythmen_9y@icloud.com" class="text-blue-400 hover:underline">trinkhalme_rhythmen_9y@icloud.com</a> (no support)
+        Telephone: <a href="tel:+491794240214" class="text-blue-400 hover:underline">+49 179 4240214</a> (no support)<br>
+        E-Mail: <a href="mailto:frankhoersing@gmail.com" class="text-blue-400 hover:underline">frankhoersing@gmail.com</a> (no support)
     </p>
     <h2 class="text-2xl font-semibold">Scope</h2>
     <p>This imprint is valid for the following domains:</p>
