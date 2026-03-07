@@ -55,7 +55,7 @@
         </div>
     </div>
 
-    <div id="incidents-container" class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+    <div id="incidents-container" class="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-40 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         <!-- Incident cards will be appended here -->
     </div>
 
@@ -92,9 +92,7 @@
             }
 
             const card = document.createElement('div');
-            card.className = `p-6 mb-8 rounded-lg shadow-lg ${bgColor} border ${borderColor} border-3 space-y-4`; 
-            card.style.width = '95%'; 
-            card.style.margin = '10px';
+            card.className = `p-6 rounded-lg shadow-lg ${bgColor} border ${borderColor} border-3 space-y-4`;
             card.innerHTML = `
                 <h2 class="text-xl font-bold ${titleColor}">${incident.title}</h2>
                 <p class="text-white">${incident.description}</p>
