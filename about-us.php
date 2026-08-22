@@ -65,7 +65,7 @@
           <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
             <div id="avatar1" class="h-24 w-24 p-0 rounded-full"></div>
             <script>
-              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=jesn.zip')
+              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=l1l.puppy')
                 .then(response => response.text())
                 .then(url => {
                   document.getElementById('avatar1').style.backgroundImage = `url(${url})`;
@@ -73,7 +73,7 @@
                 });
             </script>
           </div>
-          <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">Jason</h3>
+          <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">Isabella</h3>
           <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Founder | Frontend & Backend developer</p>
           <p class="mt-2 text-base text-gray-500 dark:text-gray-500">Java- and TypeScript, Python, Kotlin</p>
           <a href="https://github.com/deutscher775" class="mt-4 text-base text-purple-500 hover:text-purple-400">View GitHub profile</a>
@@ -99,25 +99,9 @@
 
         <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
         <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
-            <div id="avatar4" class="h-24 w-24 p-0 rounded-full"></div>
-            <script>
-              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=7kyoq')
-                .then(response => response.text())
-                .then(url => {
-                  document.getElementById('avatar4').style.backgroundImage = `url(${url})`;
-                  document.getElementById('avatar4').style.backgroundSize = 'cover';
-                });
-            </script>
-          </div>
-          <h3 class="mt-4 text-lg font-medium text-white dark:text-gray-900">kyo</h3>
-          <p class="mt-2 text-base text-gray-300 dark:text-gray-500">Admin</p>
-        </div>
-
-        <div class="p-6 bg-gray-800 dark:bg-gray-700 rounded-lg shadow-lg">
-        <div class="flex items-center justify-center h-24 w-24 rounded-full bg-purple-600">
             <div id="avatar5" class="h-24 w-24 p-0 rounded-full"></div>
             <script>
-              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=sleepi_femboi')
+              fetch('https://api.astroid.cc/contribution/contributor/avatar?name=kittycatmallow')
                 .then(response => response.text())
                 .then(url => {
                   document.getElementById('avatar5').style.backgroundImage = `url(${url})`;
